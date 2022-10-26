@@ -1,0 +1,64 @@
+.multi-store-usp-container {
+	@include media(sm) {
+		display: none;
+	}
+	.multi-store-usp-inner {
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.multi-store-usp-items {
+			display: flex;
+			padding: 0;
+			list-style: none;
+			max-width: 60%;
+			flex: 0 0 60%;
+			margin: 0;
+			text-align: center;
+		
+			li {
+				margin-bottom: 0;
+				border-right: 3px solid #fff;
+				padding: 10px 5px;
+				width: 33.33%;
+				font-weight: 400;
+				font-size: 15px;
+				display: flex;
+    			align-items: center;
+				justify-content: center;
+
+				i {
+					margin-right: 10px;
+					color: #34b43e;
+				}
+			}
+		}
+	}	
+
+	.multi-store-usp-menu {
+		flex: 40%;
+		display: flex;
+		justify-content: flex-end;
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+
+			li {
+				font-weight: 400;
+				font-size: 15px;
+				color: #000;
+				margin-right: 25px;
+				padding: 10px 0;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	
+} 

@@ -1,0 +1,48 @@
+.multi-store-seo-inner {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    > div {
+        max-width: 50%;
+        flex: 0 0 50%;    
+        
+        @include media(mb) {
+            max-width: 100%;
+            flex: 0 0 100%;    
+        }
+    }
+
+    .seo-section-right img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .seo-section-left {
+        padding: 50px;
+        font-size: 16px;
+        line-height: 25px;
+
+        @include media(mb) {
+            padding: 20px;
+            order: 2;
+        }
+
+        h2 {
+            color: #000;
+            font-size: 21px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 30px;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 26px;
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+li#accordion-section-kirki_required {
+    pointer-events: none !important;
+    
+}
+li#accordion-section-kirki_required h3.accordion-section-title{
+    font-weight: 700;
+    background: #f94d1c;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 10px;
+    line-height: 1.5;
+}
+
+li#accordion-section-kirki_required h3.accordion-section-title:after{
+    display: none;
+}

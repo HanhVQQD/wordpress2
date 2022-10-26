@@ -1,0 +1,90 @@
+.multi-store-popular-category-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px 30px -15px;
+
+    .multi-store-popular-category-inner {
+        border-radius: 6px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        min-height: 450px;
+        flex-grow: 1;
+        flex: 1 1 0px;
+        margin: 0 15px;
+
+        @include media(mb) {
+            max-width: 100%;
+            flex: 0 0 100%;
+            margin: 0 0 20px;
+            min-height: 310px;
+
+        }
+
+        img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .multi-store-popular-category-meta {
+            position: relative;
+            text-align: center;
+            padding: 0 20px;
+
+            h3 {
+                a {
+                    color: #FFFFFF;
+                    font-size: 28px;
+                    line-height: 41px;
+                    position: relative;
+                    z-index: 99;
+                    text-decoration: none;
+                }
+            }
+
+            .readmore {
+                background: transparent;
+                color: #fff;
+                font-size: 16px;
+                border-radius: 45px;
+                border: 1px solid #fff;
+                transition: all 0.3s;
+                padding: 15px 30px;
+                text-decoration: none;
+                display: inline-block;
+                position: relative;
+                z-index: 9999;
+
+                i {
+                    margin-left: 10px;
+                }
+
+                &:hover {
+                    background-color: #FF5A00;
+                    border-color: #FF5A00;
+                }
+            }
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            background: #000;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0.4;
+        }
+    }
+
+    @include media(mb) { 
+        margin: 0 0 30px 0;
+    }
+}

@@ -1,0 +1,52 @@
+.multi-store-popular-product-wrapper {
+    margin-bottom: 30px;
+    .popular-product-title {
+        margin-bottom: 30px;
+        h2 {
+            color: #1B1B1B;
+            font-size: 21px;
+            font-weight: 600;
+            margin: 0;
+        } 
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #1b1b1b;
+            margin: 0; 
+        }
+
+        
+    }
+
+    .multi-store-popular-products {
+        .woocommerce {
+            .products {
+                margin: 0 -3px;
+                li {
+                    width: calc(25% - 6px);
+                    background: #fff;
+                    box-shadow: none;
+                    margin: 0 3px 6px;
+                    .button,
+                    .added_to_cart {
+                        padding: 15px 10px;
+                        border-radius: 50px;
+                    }
+
+                    @include media(mb) { 
+                        width: 100% !important;
+                        margin-bottom: 20px !important;
+                    }
+                }
+            }
+        }
+        
+
+    }
+
+    @include media(mb) {
+        margin-bottom: 15px;
+    }
+    
+}
